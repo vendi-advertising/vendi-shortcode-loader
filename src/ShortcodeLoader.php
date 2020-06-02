@@ -83,9 +83,9 @@ final class ShortcodeLoader
             },
 
             // Then check transient cache
-            self::FETCHER_TRANSIENT => static function () {
-                return get_transient(self::TRANSIENT_KEY);
-            },
+            // self::FETCHER_TRANSIENT => static function () {
+            //     return get_transient(self::TRANSIENT_KEY);
+            // },
 
             // Lastly, check the file system
             self::FETCHER_YAML => function () {
